@@ -1,0 +1,98 @@
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f3f3f3;
+  color: #333;
+  padding: 10px;
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Layout principal */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Toolbar */
+#toolbar {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+.tool-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+}
+
+.tool-group label {
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+button {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #eee;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+button.active-tool {
+  background: #4285f4;
+  color: white;
+}
+
+/* Zona editor */
+#editor-container {
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  padding: 10px;
+  overflow: auto;
+}
+
+#drawingArea {
+  border: 1px solid #ccc;
+  background: #fafafa;
+  cursor: crosshair;
+}
+
+/* Evidențiere element selectat */
+.selected-svg-element {
+  stroke: #ff0000 !important;
+}
+
+/* Puncte de control pentru path */
+.path-point {
+  pointer-events: all;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Editor SVG - T1_0000_NUME_PRENUME</title>
+  <link rel="stylesheet" href="6_1091_ION_EMA_STEFANIA.css">
+</head>
+<body>
+  <header>
+    <h1>Editor SVG</h1>
+  </header>
+
+  <main>
+    <section id="toolbar">
+      <div class="tool-group">
+        <label>Instrument desenare:</label>
+        <button data-tool="select">Selectare</button>
+        <button data-tool="line">Linie</button>
+        <button data-tool="rect">Dreptunghi</button>
+        <button data-tool="ellipse">Elipsă</button>
+        <button data-tool="path">Cale (path)</button>
+      </div>
+
+      <div class="tool-group">
+        <label for="strokeColor">Culoare linie:</label>
+        <input type="color" id="strokeColor" value="#000000">
+
+        <label for="fillColor">Culoare fundal:</label>
+        <input type="color" id="fillColor" value="#ffffff">
+
+        <label for="strokeWidth">Grosime linie:</label>
+        <input type="number" id="strokeWidth" min="1" max="20" value="2">
+      </div>
+
+      <div class="tool-group">
+        <button id="undoBtn">Undo</button>
+        <button id="deleteBtn">Șterge element</button>
+        <button id="clearAllBtn">Șterge tot</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="exportPngBtn">Export PNG</button>
+        <button id="saveSvgBtn">Salvează SVG</button>
+      </div>
+    </section>
+
+    <section id="editor-container">
+      <svg id="drawingArea" width="800" height="500">
+      </svg>
+    </section>
+  </main>
+
+  <script src="6_1091_ION_EMA_STEFANIA.js"></script>
+</body>
+</html>
